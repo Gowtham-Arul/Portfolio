@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#f8fafc] text-gray-900 font-sans antialiased selection:bg-[#0052FF] selection:text-white;
+  }
+  section {
+    @apply py-24;
+  }
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6 md:px-8;
+  }
+}
+
+@layer components {
+  /* Navigation */
+  .nav-link {
+    @apply text-[15px] font-semibold text-gray-600 hover:text-[#0052FF] hover:border-b-2 border-[#0052FF] pb-1 transition-all duration-300;
+  }
+  
+  /* Premium SaaS Buttons */
+  .btn-primary {
+    @apply bg-[#0052FF] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-700 hover:shadow-[0_8px_20px_rgba(0,82,255,0.3)] transition-all duration-300 flex items-center justify-center tracking-wide;
+  }
+  .btn-outline {
+    @apply border-2 border-gray-900 text-gray-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-900 hover:text-white transition-all duration-300 flex items-center justify-center tracking-wide bg-transparent;
+  }
+
+  /* Typography */
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 mb-12 flex items-center justify-center;
+  }
+
+  /* Colorful Skill Badges */
+  .skill-badge {
+    @apply flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-gray-200 shadow-sm font-semibold text-sm hover:-translate-y-1 transition-transform duration-300;
+  }
+
+  /* Project Cards */
+  .featured-card {
+    @apply bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden flex flex-col;
+  }
+  
+  /* Tech Tags */
+  .tech-tag {
+    @apply px-3 py-1 text-[11px] font-bold uppercase tracking-wider rounded bg-gray-100 text-gray-700 border border-gray-200;
+  }
+}
+
+/* Infinite Scrolling Marquee Animation */
+.scroller {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+.scroller-inner {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+.scroller-inner:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1rem));
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-gray-100; }
+::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-[#0052FF]; }
+
+/* Smooth scroll with Lenis */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>GOWTHAM ARUL I | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#f8fafc]">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50 py-5">
+    <div class="container-custom flex justify-center items-center relative">
+      <div class="hidden md:flex space-x-10">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Internships</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button id="mobileMenuBtn" class="md:hidden absolute right-6 text-gray-900 text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-gray-200 absolute w-full left-0 top-full shadow-lg">
+      <div class="flex flex-col px-6 py-4 space-y-4 text-center">
+        <a href="#home" class="nav-link text-base">Home</a>
+        <a href="#skills" class="nav-link text-base">Skills</a>
+        <a href="#projects" class="nav-link text-base">Projects</a>
+        <a href="#experience" class="nav-link text-base">Experience</a>
+        <a href="#certifications" class="nav-link text-base">Certifications</a>
+        <a href="#contact" class="nav-link text-base">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-28">
+    
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-[80vh] flex items-center bg-[#f8fafc]">
+      <div class="container-custom flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+        
+        <div class="w-full md:w-1/2 text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-[#0052FF] text-sm font-bold mb-8">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0052FF] opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#0052FF]"></span>
+            </span>
+            Available for opportunities
+          </div>
+          
+          <p class="text-sm font-bold tracking-widest text-gray-600 uppercase mb-2">Hello, I'm</p>
+          <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-2 tracking-tight">GOWTHAM</h1>
+          <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">ARUL I</h1>
+          
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">I build <span class="text-[#0052FF]" id="typedTagline"></span></h2>
+          
+          <p class="text-lg text-gray-700 mb-10 leading-relaxed max-w-lg font-medium">
+            Electronics & Communication Engineering student bridging hardware and software to build innovative, real-world solutions.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="btn-primary"><i class="fas fa-rocket mr-2"></i> View Projects</a>
+            <a href="#contact" class="btn-outline border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white bg-transparent">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+          <div class="relative w-72 h-80 md:w-80 md:h-[22rem]">
+            <!-- Solid Blue Background to match user's latest screenshot -->
+            <div class="absolute inset-0 bg-[#0052FF] rounded-2xl transform translate-x-4 translate-y-4"></div>
+            <img src="/my-photo.png" alt="GOWTHAM ARUL I" class="relative z-10 w-full h-full object-cover rounded-2xl border-4 border-white shadow-xl" onerror="this.src='https://ui-avatars.com/api/?name=Gowtham+Arul+I&background=f8fafc&color=000&size=512'">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INFINITE SCROLLING SKILLS MARQUEE -->
+    <div class="bg-white border-y border-gray-200 py-6 overflow-hidden flex scroller relative z-10 shadow-sm">
+      <div class="scroller-inner flex gap-8 px-4 items-center">
+        <div class="flex items-center gap-8 min-w-max">
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-python text-[#0052FF]"></i> Python</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-microchip text-[#0052FF]"></i> ESP32-CAM MB</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-react text-[#0052FF]"></i> React.js</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-database text-[#0052FF]"></i> MySQL</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-code text-[#0052FF]"></i> Embedded C++</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-raspberry-pi text-[#0052FF]"></i> Raspberry Pi 3</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-brain text-[#0052FF]"></i> ResNet-50</span>
+        </div>
+        <div class="flex items-center gap-8 min-w-max">
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-python text-[#0052FF]"></i> Python</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-microchip text-[#0052FF]"></i> ESP32-CAM MB</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-react text-[#0052FF]"></i> React.js</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-database text-[#0052FF]"></i> MySQL</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-code text-[#0052FF]"></i> Embedded C++</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-raspberry-pi text-[#0052FF]"></i> Raspberry Pi 3</span>
+          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-brain text-[#0052FF]"></i> ResNet-50</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIZED SKILLS -->
+    <section id="skills" class="bg-[#f8fafc]">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-black text-gray-900 inline-block relative">
+            My <span class="text-[#0052FF]">Skills</span>
+            <div class="h-1 w-12 bg-[#0052FF] mx-auto mt-4 rounded-full"></div>
+          </h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm skill-category">
+            <h3 class="text-lg font-bold text-gray-900 mb-5 flex items-center"><i class="fas fa-code text-[#0052FF] mr-2"></i> Programming</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge text-blue-700">C</span>
+              <span class="skill-badge text-blue-900">C++</span>
+              <span class="skill-badge text-yellow-600"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-badge text-gray-700"><i class="fas fa-microchip"></i> Embedded C</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm skill-category">
+            <h3 class="text-lg font-bold text-gray-900 mb-5 flex items-center"><i class="fas fa-memory text-[#0052FF] mr-2"></i> Hardware</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge text-gray-800">ESP32-CAM MB</span>
+              <span class="skill-badge text-gray-800">ESP8266</span>
+              <span class="skill-badge text-red-600"><i class="fab fa-raspberry-pi"></i> Raspberry Pi 3</span>
+              <span class="skill-badge text-gray-800">8085 & 8051</span>
+              <span class="skill-badge text-green-700"><i class="fas fa-satellite-dish"></i> Sensors & Actuators</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm skill-category">
+            <h3 class="text-lg font-bold text-gray-900 mb-5 flex items-center"><i class="fas fa-globe text-[#0052FF] mr-2"></i> Web & Data</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge text-orange-600"><i class="fab fa-html5"></i> HTML/CSS</span>
+              <span class="skill-badge text-yellow-500"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-badge text-blue-500"><i class="fab fa-react"></i> React.js</span>
+              <span class="skill-badge text-green-600"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="skill-badge text-blue-800"><i class="fas fa-database"></i> MySQL</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm skill-category">
+            <h3 class="text-lg font-bold text-gray-900 mb-5 flex items-center"><i class="fas fa-tools text-[#0052FF] mr-2"></i> Tools & Cloud</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge text-teal-600">Arduino IDE</span>
+              <span class="skill-badge text-blue-600">VS Code</span>
+              <span class="skill-badge text-gray-800">Wokwi & Proteus</span>
+              <span class="skill-badge text-purple-600">Adafruit IO</span>
+              <span class="skill-badge text-sky-500">ThingSpeak</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="bg-white border-t border-gray-200">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <p class="text-base font-bold text-[#0052FF] uppercase tracking-widest mb-2"><i class="fas fa-star text-yellow-400 mr-1"></i> Featured Work</p>
+          <h2 class="text-4xl font-black text-gray-900 inline-block relative">
+            Explore my <span class="text-[#0052FF]">Projects</span>
+            <div class="h-1 w-12 bg-[#0052FF] mx-auto mt-4 rounded-full"></div>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          
+          <div class="featured-card group">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 h-48 flex flex-col items-center justify-center border-b border-gray-100 relative group-hover:bg-blue-100 transition-colors">
+              <div class="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center mb-3">
+                <i class="fas fa-user-check text-4xl text-[#0052FF]"></i>
+              </div>
+              <h3 class="font-bold text-gray-800 text-lg">Facial Recognition System</h3>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-white">
+              <span class="text-[#0052FF] font-black text-base mb-2 tracking-widest">01</span>
+              <h4 class="text-2xl font-black text-gray-900 mb-4">AI-Enabled Attendance System</h4>
+              <p class="text-gray-700 text-base mb-6 leading-relaxed flex-grow">
+                Built an end-to-end facial recognition attendance system streaming live video from a camera module. Identifies faces using a pre-trained CNN model (ResNet-50) and automatically marks attendance in real-time.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="tech-tag">ESP32-CAM MB</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">ResNet-50 (CNN)</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <a href="https://github.com/Gowtham-Arul" target="_blank" class="inline-flex items-center px-5 py-2.5 bg-gray-900 hover:bg-[#0052FF] text-white text-base font-bold rounded-lg transition-colors w-max">
+                <i class="fab fa-github mr-2 text-lg"></i> Source Code
+              </a>
+            </div>
+          </div>
+
+          <div class="featured-card group">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 h-48 flex flex-col items-center justify-center border-b border-gray-100 relative group-hover:bg-blue-100 transition-colors">
+              <div class="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center mb-3">
+                <i class="fas fa-hard-hat text-4xl text-[#0052FF]"></i>
+              </div>
+              <h3 class="font-bold text-gray-800 text-lg">SmartShield IoT</h3>
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-white">
+              <span class="text-[#0052FF] font-black text-base mb-2 tracking-widest">02</span>
+              <h4 class="text-2xl font-black text-gray-900 mb-4">IoT Helmet for Mining Safety</h4>
+              <p class="text-gray-700 text-base mb-6 leading-relaxed flex-grow">
+                A smart safety helmet that continuously monitors toxic gases, temperature, humidity, and worker heart rate. It provides real-time alerts via HTTP protocol to prevent accidents in hazardous environments.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="tech-tag">ESP8266</span>
+                <span class="tech-tag">Embedded C++</span>
+                <span class="tech-tag">OLED & Sensors</span>
+                <span class="tech-tag">Arduino IDE</span>
+              </div>
+              <a href="https://github.com/Gowtham-Arul" target="_blank" class="inline-flex items-center px-5 py-2.5 bg-gray-900 hover:bg-[#0052FF] text-white text-base font-bold rounded-lg transition-colors w-max">
+                <i class="fab fa-github mr-2 text-lg"></i> Source Code
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & ACHIEVEMENTS SECTION -->
+    <section id="experience" class="bg-[#f8fafc] border-t border-gray-200">
+      <div class="container-custom">
+        <div class="grid lg:grid-cols-2 gap-16">
+          
+          <div>
+            <h2 class="text-3xl font-black text-gray-900 mb-10 flex items-center">
+              <i class="fas fa-briefcase text-[#0052FF] mr-3"></i> Experience
+            </h2>
+            <div class="space-y-6">
+              
+              <div class="bg-white p-6 rounded-xl border-l-4 border-l-[#0052FF] shadow-sm exp-card">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-gray-50 border border-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img src="/iiit-logo.png" onerror="this.src='https://ui-avatars.com/api/?name=IIIT&background=0052FF&color=fff'" class="w-10 h-10 object-contain">
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 text-xl">IIIT SriCity</h3>
+                    <span class="text-xs font-bold text-[#0052FF] bg-blue-50 px-3 py-1 rounded-full uppercase">May-Jun 2026</span>
+                  </div>
+                </div>
+                <p class="text-base font-bold text-gray-800 mb-4 uppercase tracking-wider">Summer Intern</p>
+                <ul class="space-y-2 text-base text-gray-700">
+                  <li class="flex items-start"><i class="fas fa-arrow-right text-[#0052FF] mt-1.5 mr-3 text-sm"></i> Worked with pre-trained CNN model (ResNet-50) & image augmentation.</li>
+                  <li class="flex items-start"><i class="fas fa-arrow-right text-[#0052FF] mt-1.5 mr-3 text-sm"></i> Integrated ESP32-CAM MB module for image processing.</li>
+                  <li class="flex items-start"><i class="fas fa-arrow-right text-[#0052FF] mt-1.5 mr-3 text-sm"></i> Gained hands-on experience with Raspberry Pi 3 and Raspbian OS.</li>
+                </ul>
+              </div>
+
+              <div class="bg-white p-6 rounded-xl border-l-4 border-l-gray-300 shadow-sm exp-card">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-gray-50 border border-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img src="/nielit-logo.png" onerror="this.src='https://ui-avatars.com/api/?name=NIELIT&background=0052FF&color=fff'" class="w-10 h-10 object-contain">
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 text-xl">NIELIT Calicut</h3>
+                    <span class="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1 rounded-full uppercase">Dec 2025</span>
+                  </div>
+                </div>
+                <p class="text-base font-bold text-gray-800 mb-4 uppercase tracking-wider">Embedded Systems & IoT</p>
+                <ul class="space-y-2 text-base text-gray-700">
+                  <li class="flex items-start"><i class="fas fa-arrow-right text-[#0052FF] mt-1.5 mr-3 text-sm"></i> Wrote Embedded C programs and simulated hardware via Wokwi.</li>
+                  <li class="flex items-start"><i class="fas fa-arrow-right text-[#0052FF] mt-1.5 mr-3 text-sm"></i> Monitored real-time data using Adafruit IO cloud platforms.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <h2 class="text-3xl font-black text-gray-900 mb-10 flex items-center">
+              <i class="fas fa-trophy text-[#0052FF] mr-3"></i> Achievements
+            </h2>
+            <div class="space-y-5">
+              
+              <a href="https://www.skillrack.com/faces/resume.xhtml?id=515232&key=bd61b5cf71f93d15b37fdf2b5534bcf513fbf28d" target="_blank" class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex items-center exp-card hover:border-[#0052FF] hover:shadow-md transition-all group block">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-[#0052FF] text-2xl mr-5 flex-shrink-0 group-hover:bg-[#0052FF] group-hover:text-white transition-colors">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg group-hover:text-[#0052FF] transition-colors">Solved 1000+ Problems</h3>
+                  <p class="text-base text-gray-700 mt-1">SkillRack Profile | 308 Bronzes</p>
+                </div>
+              </a>
+
+              <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex items-center exp-card hover:border-[#0052FF] transition-colors">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-[#0052FF] text-2xl mr-5 flex-shrink-0">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg">2nd Prize – Mini Project Expo</h3>
+                  <p class="text-base text-gray-700 mt-1">Sri Eshwar College of Engineering (2026)</p>
+                </div>
+              </div>
+
+              <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex items-center exp-card hover:border-[#0052FF] transition-colors">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-[#0052FF] text-2xl mr-5 flex-shrink-0">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg">Participant – TechnoMind 2K25</h3>
+                  <p class="text-base text-gray-700 mt-1">Karpagam Institute of Technology</p>
+                </div>
+              </div>
+
+              <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex items-center exp-card hover:border-[#0052FF] transition-colors">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-[#0052FF] text-2xl mr-5 flex-shrink-0">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg">Hackathons & Expos</h3>
+                  <p class="text-base text-gray-700 mt-1">Freshathon & selfE Hackathon</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="bg-white border-t border-gray-200">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-black text-gray-900 inline-block relative">
+            My <span class="text-[#0052FF]">Certifications</span>
+            <div class="h-1 w-12 bg-[#0052FF] mx-auto mt-4 rounded-full"></div>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm cert-card hover:-translate-y-2 hover:shadow-md transition-all duration-300 flex flex-col h-full">
+            <span class="text-sm font-bold text-gray-600 bg-gray-200 px-3 py-1 rounded inline-block mb-4 w-max">2026</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight flex-grow">Design Thinking<br>A primer</h3>
+            <p class="text-base font-semibold text-[#0052FF] mb-6">NPTEL</p>
+            <a href="https://drive.google.com/file/d/1z7xCYNhHKfy5AV2dcOW64RHJJKN2MJBB/view?usp=drive_link" target="_blank" class="text-base font-bold text-gray-800 hover:text-[#0052FF] transition-colors">View Certificate &rarr;</a>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm cert-card hover:-translate-y-2 hover:shadow-md transition-all duration-300 flex flex-col h-full">
+            <span class="text-sm font-bold text-gray-600 bg-gray-200 px-3 py-1 rounded inline-block mb-4 w-max">2025</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight flex-grow">Digital Circuits<br>Mastery</h3>
+            <p class="text-base font-semibold text-[#0052FF] mb-6">NPTEL</p>
+            <a href="https://drive.google.com/file/d/1oApl0EsI7hrLJIZuUIOADBfP9n-gqb7b/view?usp=drive_link" target="_blank" class="text-base font-bold text-gray-800 hover:text-[#0052FF] transition-colors">View Certificate &rarr;</a>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm cert-card hover:-translate-y-2 hover:shadow-md transition-all duration-300 flex flex-col h-full">
+            <span class="text-sm font-bold text-gray-600 bg-gray-200 px-3 py-1 rounded inline-block mb-4 w-max">2025</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight flex-grow">Guide to C<br>Programming</h3>
+            <p class="text-base font-semibold text-[#0052FF] mb-6">LinkedIn Learning</p>
+            <a href="https://www.linkedin.com/learning/certificates/5604ab935c3e59ce9dd197cf97428b18a797059d7cdd1e79d7d7aae6f32a949c" target="_blank" class="text-base font-bold text-gray-800 hover:text-[#0052FF] transition-colors">View Certificate &rarr;</a>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm cert-card hover:-translate-y-2 hover:shadow-md transition-all duration-300 flex flex-col h-full">
+            <span class="text-sm font-bold text-gray-600 bg-gray-200 px-3 py-1 rounded inline-block mb-4 w-max">2025</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight flex-grow">Mastering DSA<br>in C & C++</h3>
+            <p class="text-base font-semibold text-[#0052FF] mb-6">Udemy</p>
+            <a href="https://drive.google.com/file/d/1lgixxaKrBiqN1M06t6aembQO-ojTbu5C/view?usp=drive_link" target="_blank" class="text-base font-bold text-gray-800 hover:text-[#0052FF] transition-colors">View Certificate &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ENGAGING RESUME DOWNLOAD SECTION -->
+    <section id="resume" class="bg-[#f8fafc] border-t border-gray-200 py-24">
+      <div class="container-custom">
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-lg p-12 text-center max-w-3xl mx-auto relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
+          
+          <!-- Decorative Top Glow Layer -->
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-[#0052FF] to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <!-- Icon with engaging hover lift -->
+          <div class="mb-6 inline-flex items-center justify-center w-24 h-24 bg-red-50 rounded-2xl group-hover:scale-110 group-hover:-translate-y-2 transition-transform duration-500 shadow-sm">
+            <i class="fas fa-file-pdf text-5xl text-red-500 drop-shadow-sm"></i>
+          </div>
+          
+          <h2 class="text-3xl font-black text-gray-900 mb-8">View My Full Resume</h2>
+          
+          <!-- Buttons matched to your provided image format -->
+          <div class="flex flex-wrap justify-center gap-5">
+            <a href="/resume.pdf" target="_blank" class="border-2 border-gray-900 text-gray-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-50 transition-all duration-300 flex items-center text-[15px]">
+              <i class="fas fa-eye mr-2"></i> View Online
+            </a>
+            <button id="downloadResumeBtn" class="bg-[#0052FF] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-700 hover:shadow-[0_8px_20px_rgba(0,82,255,0.3)] transition-all duration-300 flex items-center text-[15px]">
+              <i class="fas fa-download mr-2"></i> Download PDF
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-gray-900 text-white">
+      <div class="container-custom relative">
+        <div class="absolute top-10 right-10 w-32 h-32 bg-[#0052FF] rounded-full blur-[80px] opacity-30"></div>
+        
+        <div class="grid md:grid-cols-2 gap-16 relative z-10">
+          
+          <div>
+            <h2 class="text-4xl font-black mb-6">Let's build <br><span class="text-[#0052FF]">something cool !.</span></h2>
+            <p class="text-gray-300 text-lg mb-10 leading-relaxed max-w-md font-medium">
+              Available for Embedded and IoT roles. Please Reach out via email or connect with me on LinkedIn.
+            </p>
+            
+            <div class="space-y-6 text-base font-semibold">
+              <a href="mailto:gowthamarul.i2024ece@sece.ac.in" class="flex items-center text-gray-300 hover:text-white transition-colors group">
+                <div class="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center mr-5 group-hover:bg-[#0052FF] transition-colors"><i class="fas fa-envelope text-lg"></i></div>
+                gowthamarul.i2024ece@sece.ac.in
+              </a>
+              <a href="https://www.linkedin.com/in/gowtham-arul-0603b02ab/" target="_blank" class="flex items-center text-gray-300 hover:text-white transition-colors group">
+                <div class="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center mr-5 group-hover:bg-[#0A66C2] transition-colors"><i class="fab fa-linkedin-in text-xl"></i></div>
+                LinkedIn: gowtham-arul
+              </a>
+              <a href="https://github.com/Gowtham-Arul" target="_blank" class="flex items-center text-gray-300 hover:text-white transition-colors group">
+                <div class="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center mr-5 group-hover:bg-white group-hover:text-black transition-colors"><i class="fab fa-github text-xl"></i></div>
+                GitHub: Gowtham-Arul
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-2xl">
+            <form id="contactForm" class="space-y-6">
+              <input type="hidden" name="access_key" value="592416ff-3e3c-4fa1-bebb-b0b7999515e8">
+              
+              <div class="grid grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-sm font-bold text-gray-400 mb-2 uppercase tracking-wide">Name</label>
+                  <input type="text" name="name" required class="w-full px-5 py-3.5 bg-gray-900 border border-gray-700 rounded-lg text-base text-white focus:outline-none focus:border-[#0052FF] transition-colors">
+                </div>
+                <div>
+                  <label class="block text-sm font-bold text-gray-400 mb-2 uppercase tracking-wide">Email</label>
+                  <input type="email" name="email" required class="w-full px-5 py-3.5 bg-gray-900 border border-gray-700 rounded-lg text-base text-white focus:outline-none focus:border-[#0052FF] transition-colors">
+                </div>
+              </div>
+              
+              <div>
+                <label class="block text-sm font-bold text-gray-400 mb-2 uppercase tracking-wide">Message</label>
+                <textarea name="message" rows="5" required class="w-full px-5 py-3.5 bg-gray-900 border border-gray-700 rounded-lg text-base text-white focus:outline-none focus:border-[#0052FF] transition-colors resize-none"></textarea>
+              </div>
+              
+              <button type="submit" class="w-full bg-[#0052FF] hover:bg-blue-600 text-white font-bold py-4 rounded-lg text-lg transition-all mt-2 shadow-[0_4px_15px_rgba(0,82,255,0.3)]">
+                Send Message <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+              <div id="formStatus" class="hidden"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- FOOTER -->
+      <div class="text-center mt-24 pb-8 text-sm font-medium text-gray-500 border-t border-gray-800 pt-8">
+        &copy; 2026 GOWTHAM ARUL I. Designed & Built for Innovation.
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
