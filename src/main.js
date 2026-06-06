@@ -24,7 +24,7 @@ new Typed('#typedTagline', {
   strings: [
     'hardware.',
     'software.',
-    'embedded systems.',
+    'Embedded systems.',
     'IoT solutions.'
   ],
   typeSpeed: 50,
