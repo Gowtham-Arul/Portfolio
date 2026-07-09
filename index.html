@@ -9,21 +9,19 @@
 </head>
 <body class="bg-[#f8fafc]">
 
-  <!-- NAVIGATION -->
   <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50 py-5">
     <div class="container-custom flex justify-center items-center relative">
       <div class="hidden md:flex space-x-10">
         <a href="#home" class="nav-link">Home</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
-        <a href="#experience" class="nav-link">Internships</a>
+        <a href="#experience" class="nav-link">Experience</a>
         <a href="#certifications" class="nav-link">Certifications</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
       <button id="mobileMenuBtn" class="md:hidden absolute right-6 text-gray-900 text-2xl"><i class="fas fa-bars"></i></button>
     </div>
     
-    <!-- Mobile Menu -->
     <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-gray-200 absolute w-full left-0 top-full shadow-lg">
       <div class="flex flex-col px-6 py-4 space-y-4 text-center">
         <a href="#home" class="nav-link text-base">Home</a>
@@ -38,7 +36,6 @@
 
   <main class="pt-28">
     
-    <!-- HERO SECTION -->
     <section id="home" class="min-h-[80vh] flex items-center bg-[#f8fafc]">
       <div class="container-custom flex flex-col-reverse md:flex-row items-center justify-between gap-16">
         
@@ -69,7 +66,6 @@
 
         <div class="w-full md:w-1/2 flex justify-center md:justify-end">
           <div class="relative w-72 h-80 md:w-80 md:h-[22rem]">
-            <!-- Solid Blue Background to match user's latest screenshot -->
             <div class="absolute inset-0 bg-[#0052FF] rounded-2xl transform translate-x-4 translate-y-4"></div>
             <img src="/my-photo.png" alt="GOWTHAM ARUL I" class="relative z-10 w-full h-full object-cover rounded-2xl border-4 border-white shadow-xl" onerror="this.src='https://ui-avatars.com/api/?name=Gowtham+Arul+I&background=f8fafc&color=000&size=512'">
           </div>
@@ -78,11 +74,9 @@
       </div>
     </section>
 
-    <!-- INFINITE SCROLLING SKILLS MARQUEE -->
     <div class="bg-white border-y border-gray-200 py-6 overflow-hidden flex scroller relative z-10 shadow-sm">
       <div class="scroller-inner flex gap-8 px-4 items-center">
         <div class="flex items-center gap-8 min-w-max">
-          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-python text-[#0052FF]"></i> Python</span>
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-microchip text-[#0052FF]"></i> ESP32-CAM MB</span>
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-react text-[#0052FF]"></i> React.js</span>
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-database text-[#0052FF]"></i> MySQL</span>
@@ -91,7 +85,6 @@
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-brain text-[#0052FF]"></i> ResNet-50</span>
         </div>
         <div class="flex items-center gap-8 min-w-max">
-          <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-python text-[#0052FF]"></i> Python</span>
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-microchip text-[#0052FF]"></i> ESP32-CAM MB</span>
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fab fa-react text-[#0052FF]"></i> React.js</span>
           <span class="text-lg font-bold text-gray-500 flex items-center gap-2"><i class="fas fa-database text-[#0052FF]"></i> MySQL</span>
@@ -102,7 +95,6 @@
       </div>
     </div>
 
-    <!-- CATEGORIZED SKILLS -->
     <section id="skills" class="bg-[#f8fafc]">
       <div class="container-custom">
         <div class="text-center mb-16">
@@ -118,7 +110,7 @@
             <h3 class="text-lg font-bold text-gray-900 mb-5 flex items-center"><i class="fas fa-code text-[#0052FF] mr-2"></i> Programming</h3>
             <div class="flex flex-wrap gap-3">
               <span class="skill-badge text-blue-700">C</span>
-              <span class="skill-badge text-yellow-600"><i class="fab fa-python"></i> Python</span>
+              <br>
               <span class="skill-badge text-gray-700"><i class="fas fa-microchip"></i> Embedded C</span>
             </div>
           </div>
@@ -127,8 +119,7 @@
             <h3 class="text-lg font-bold text-gray-900 mb-5 flex items-center"><i class="fas fa-memory text-[#0052FF] mr-2"></i> Hardware</h3>
             <div class="flex flex-wrap gap-3">
               <span class="skill-badge text-gray-800">ESP32-CAM MB</span>
-              <span class="skill-badge text-blue-800">ESP32</span>
-              <span class="skill-badge text-teal-800">ESP8266</span>
+              <span class="skill-badge text-gray-800">ESP8266</span>
               <span class="skill-badge text-red-600"><i class="fab fa-raspberry-pi"></i> Raspberry Pi 3</span>
               <span class="skill-badge text-gray-800">8085 & 8051</span>
               <span class="skill-badge text-green-700"><i class="fas fa-satellite-dish"></i> Sensors & Actuators</span>
@@ -161,7 +152,6 @@
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" class="bg-white border-t border-gray-200">
       <div class="container-custom">
         <div class="text-center mb-16">
@@ -229,7 +219,6 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE & ACHIEVEMENTS SECTION -->
     <section id="experience" class="bg-[#f8fafc] border-t border-gray-200">
       <div class="container-custom">
         <div class="grid lg:grid-cols-2 gap-16">
@@ -331,7 +320,6 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS SECTION -->
     <section id="certifications" class="bg-white border-t border-gray-200">
       <div class="container-custom">
         <div class="text-center mb-16">
@@ -375,22 +363,18 @@
       </div>
     </section>
 
-    <!-- NEW ENGAGING RESUME DOWNLOAD SECTION -->
     <section id="resume" class="bg-[#f8fafc] border-t border-gray-200 py-24">
       <div class="container-custom">
         <div class="bg-white rounded-2xl border border-gray-200 shadow-lg p-12 text-center max-w-3xl mx-auto relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
           
-          <!-- Decorative Top Glow Layer -->
           <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-[#0052FF] to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
           
-          <!-- Icon with engaging hover lift -->
           <div class="mb-6 inline-flex items-center justify-center w-24 h-24 bg-red-50 rounded-2xl group-hover:scale-110 group-hover:-translate-y-2 transition-transform duration-500 shadow-sm">
             <i class="fas fa-file-pdf text-5xl text-red-500 drop-shadow-sm"></i>
           </div>
           
           <h2 class="text-3xl font-black text-gray-900 mb-8">View My Full Resume</h2>
           
-          <!-- Buttons matched to your provided image format -->
           <div class="flex flex-wrap justify-center gap-5">
             <a href="/resume.pdf" target="_blank" class="border-2 border-gray-900 text-gray-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-50 transition-all duration-300 flex items-center text-[15px]">
               <i class="fas fa-eye mr-2"></i> View Online
@@ -404,7 +388,6 @@
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact" class="bg-gray-900 text-white">
       <div class="container-custom relative">
         <div class="absolute top-10 right-10 w-32 h-32 bg-[#0052FF] rounded-full blur-[80px] opacity-30"></div>
@@ -412,9 +395,9 @@
         <div class="grid md:grid-cols-2 gap-16 relative z-10">
           
           <div>
-            <h2 class="text-4xl font-black mb-6">Let's build <br><span class="text-[#0052FF]">something cool !</span></h2>
+            <h2 class="text-4xl font-black mb-6">Let's build <br><span class="text-[#0052FF]">something cool.</span></h2>
             <p class="text-gray-300 text-lg mb-10 leading-relaxed max-w-md font-medium">
-              Available for Embedded and IoT roles. Please Reach out via email or connect with me on LinkedIn.
+              Available for Embedded Systems integrations, algorithmic software development, and IoT opportunities. Reach out via email or connect with me on LinkedIn.
             </p>
             
             <div class="space-y-6 text-base font-semibold">
@@ -463,9 +446,8 @@
         </div>
       </div>
       
-      <!-- FOOTER -->
       <div class="text-center mt-24 pb-8 text-sm font-medium text-gray-500 border-t border-gray-800 pt-8">
-        &copy; 2026 GOWTHAM ARUL I.
+        &copy; 2026 GOWTHAM ARUL I
       </div>
     </section>
 

@@ -22,8 +22,8 @@ requestAnimationFrame(raf)
 // 2. Typed.js (Hero Tagline)
 new Typed('#typedTagline', {
   strings: [
-    'hardware.',
-    'software.',
+    'Hardware.',
+    'Software.',
     'Embedded systems.',
     'IoT solutions.'
   ],
@@ -65,7 +65,7 @@ window.addEventListener('load', () => {
   }, 200);
 });
 
-// 4. FIX: Force Lenis routing for all anchor links (Fixes the double-click bug)
+// 4. FIX: Force Lenis routing for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
